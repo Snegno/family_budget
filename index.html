@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>БД</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles.css?v=1.42">
+</head>
+<body>
+
+<div class="acces">
+	<div class="acces__form">
+		<input class="acces__input" placeholder="Пароль"></input>
+		<button class="acces__in">Enter</button>
+	</div>
+</div>
+<button class="on_back result--hide">Вернуться</button>
+<form class="result result--hide" method="POST">
+	<div class="wrapper">
+		<div class="open open__eat__about" id="eat"></div>
+		<h1>Еда</h1>
+		<span>Потрачено</span>
+		<input class="potracheno_eat input_mini" type="text" disabled="true"></input>
+		<span>Осталось</span>
+		<input class="ostatok_eat input_mini" type="text" disabled="true"></input>
+		<br>
+		<span class="add_pay">Внести трату</span>
+		<input class="add_buy__eat add_buy"></input>
+		<br>
+		<textarea class="add_about__eat"></textarea>
+		<br>
+		<input class="push_buy" id="eat" type="submit"></input>
+	</div>
+	<div class="wrapper">
+		<div class="open open__drinks__about" id="drinks"></div>
+		<h1>Напитки</h1>
+		<span>Потрачено</span>
+		<input class="potracheno_drinks input_mini" type="text" disabled="true"></input>
+		<span>Осталось</span>
+		<input class="ostatok_drinks input_mini" type="text" disabled="true"></input>
+		<br>
+		<span class="add_pay">Внести трату</span>
+		<input class="add_buy__drinks add_buy"></input>
+		<br>
+		<textarea class="add_about__drinks"></textarea>
+		<br>
+		<input class="push_buy" id="drinks" type="submit"></input>
+	</div>
+	<div class="wrapper">
+		<div class="open open__bitovie__about" id="bitovie"></div>
+		<h1>Бытовые</h1>
+		<span>Потрачено</span>
+		<input class="potracheno_bitovie input_mini" type="text" disabled="true"></input>
+		<span>Осталось</span>
+		<input class="ostatok_bitovie input_mini" type="text" disabled="true"></input>
+		<br>
+		<span class="add_pay">Внести трату</span>
+		<input class="add_buy__bitovie add_buy"></input>
+		<br>
+		<textarea class="add_about__bitovie"></textarea>
+		<br>
+		<input class="push_buy" id="bitovie" type="submit"></input>
+	</div>
+	<div class="wrapper">
+		<div class="open open__free__about" id="free"></div>
+		<h1>Свободные</h1>
+		<span>Потрачено</span>
+		<input class="potracheno_free input_mini" type="text" disabled="true"></input>
+		<span>Осталось</span>
+		<input class="ostatok_free input_mini" type="text" disabled="true"></input>
+		<br>
+		<span class="add_pay">Внести трату</span>
+		<input class="add_buy__free add_buy"></input>
+		<br>
+		<textarea class="add_about__free"></textarea>
+		<br>
+		<input class="push_buy" id="free" type="submit"></input>
+	</div>
+</form>
+
+<div class="comments">
+	<ul class="comments__list">
+		<!-- тут генерится список -->
+	</ul>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+<script type="text/javascript" src="bd.js?v=1.42"></script>
+</body>
+</html>
