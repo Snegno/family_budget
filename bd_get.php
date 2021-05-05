@@ -3,7 +3,7 @@
 error_reporting(E_ALL); 
 ini_set('display_errors', 1); 
 
-$link = mysqli_connect("127.0.0.1", "r97787o2_test", "Tornado01", "r97787o2_test");
+$link = mysqli_connect("127.0.0.1", "Имя таблицы", "Пароль", "Логин");
  
 if (!$link) {
       echo 'Не могу соединиться с БД. Код ошибки: ' . mysqli_connect_errno() . ', ошибка: ' . mysqli_connect_error();
